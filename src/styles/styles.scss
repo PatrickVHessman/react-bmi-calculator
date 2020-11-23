@@ -1,0 +1,70 @@
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+
+$primary : #ce372b;
+
+.App {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $primary;
+}
+
+#main {
+    height: 75vh;
+    width: 100%;
+    max-width: 800px;
+    background: #fff;
+    border: 4px solid #000;
+    border-radius: 1%;
+}
+
+h1 {
+    text-align: center;
+}
+
+.margin20 {
+    margin-top: 20px;
+}
+
+.neutral {
+    @extend .margin20;
+    color: #000;
+}
+
+.healthy {
+    @extend .margin20;
+   color: #92cc41
+}
+
+.warning {
+    @extend .margin20;
+    color: #f7d51d;
+}
+
+.unhealthy {
+    @extend .margin20;
+    color: #e76e55;
+}
+
+.emphasis {
+    @extend .margin20;
+    text-decoration: underline;
+}
+
+.disclaimer {
+    font-size: .75em;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    color: #fff;
+    background: #000;
+    width: 100%;
+}
+
+footer a {
+    color: $primary;
+}
